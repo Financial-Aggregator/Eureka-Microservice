@@ -8,3 +8,8 @@ services:
       - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
       - EUREKA_CLIENT_FETCH_REGISTRY=false
     restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: bank-network
